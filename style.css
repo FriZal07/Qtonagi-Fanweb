@@ -8,30 +8,79 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.sizer {
+    display: flex;
+    padding: 15px 15px;
+    flex: 0 1 1500px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+
 .header {
+    display: flex;
+    justify-content: center;
+
     background-color: #1F2937;
 
-    display: flex;
-    flex: initial;
-}
-
-.headerlink {
-    list-style: none;
-}
-
-.logo {
+        .links {
+            color: white;
+            margin-top: 10px;
+            margin-left: auto;
+        
+            display: flex;
+            gap: 30px;
+        }
+        
+        .logo {
+            height: 30px;
+            width: auto;
+        }
 
 }
 
 .content1 {
+    display: flex;
+    flex-basis: 300px;
+    justify-content: center;
 
     background-color: #1F2937;
+    padding: 50px 0px;
 
-    display: flex;
-    flex:0 0 500px;
+    .textbox {
 
-    .text {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 500px;
+
         font-family: "roboto", sans-serif;
+        color: white;
+        margin-right: auto;
+        
+
+        .header {
+            font-size: 48px;
+            font-weight: bolder;
+            color: #F9FAF8;
+            padding: 0;
+        }
 
         .button {
             border-radius: 5px;
@@ -48,22 +97,31 @@ body {
     }
 
     .image {
-        margin: 20 20;
+        margin: 0px;
+        padding: 0;
     }
 
 }
 
 .content2 {
-
     display: flex;
-    flex:0 0 500px;
+    flex-basis: 300px;
+    justify-content: center;
 }
 
 .content3 {
-    background-color: #E5E7EB;
-
     display: flex;
-    flex:0 0 500px;
+    flex-basis: 300px;
+    justify-content: center;
+
+    background-color: #E5E7EB;
+}
+
+
+.content4 {
+    display: flex;
+    flex-basis: 300px;
+    justify-content: center;
 
     .button {
         border-radius: 5px;
@@ -80,12 +138,8 @@ body {
 
 
 .footer {
-    background-color: #1F2937;
-    
     display: flex;
-    flex: initial;
-}
+    justify-content: center;
 
-a {
-    text-decoration: none;
+    background-color: #1F2937;
 }
