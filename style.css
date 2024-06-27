@@ -1,5 +1,12 @@
+@font-face{
+    font-family: "roboto";
+    src: url(./Font/Roboto-Regular.ttf)
+}
+
+
 body, html {
     height: 100%;
+    font-family: "roboto";
 }
 
 body {
@@ -16,7 +23,6 @@ ul {
     list-style: none;
     padding: 0;
 }
-
 
 .content {
     display: flex;
@@ -55,7 +61,8 @@ ul {
         }
         
         .logo {
-            height: 30px;
+            height: 60px;
+            border-radius: 100%;
             width: auto;
         }
 
@@ -71,7 +78,8 @@ ul {
     .sizer{
         flex-wrap: wrap;
         justify-content: center;
-        padding: 25px 25px 125px 25px;
+        align-items: center;
+        padding: 40px 25px 125px 25px;
         align-items: center;
     }
 
@@ -82,7 +90,6 @@ ul {
         flex: 0 1 500px;
         gap: 20px;
 
-        font-family: "roboto", sans-serif;
         margin: auto;
         color: white;
         
@@ -91,7 +98,7 @@ ul {
             font-size: 48px;
             font-weight: bolder;
             color: #F9FAF8;
-            padding: 0;
+            padding: 10px 0px;
         }
 
         .button {
@@ -108,7 +115,13 @@ ul {
 
     }
 
+    .imagecontainer{
+        margin: auto;
+    }
+
     .image {
+        height: auto;
+        max-width: 500px;
         margin: auto;
     }
 
@@ -123,34 +136,35 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
 
-    .subhead{
-        margin: 20px auto;
-        font-size: 36px;
-        font-weight: bolder;
-        color: #1F2937;
-    }
+        .subhead{
+            margin: 20px auto;
+            font-size: 36px;
+            font-weight: bolder;
+            color: #1F2937;
+        }
 
-    .imagecontainer{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 50px;
-
-        margin: 5px 100px 40px 100px;
-
-        .imagechild{
+        .imagecontainer{
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-            
-            .image{
-                width: auto;
-                height: 100px;
-                border: 4px #3882f6 solid;
-                border-radius: 15px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            margin: 5px 100px 40px 100px;
+
+            .imagechild{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                
+                .image{
+                    width: auto;
+                    height:370px;
+                    border: 4px #3882f6 solid;
+                    border-radius: 15px;
+                }
+
             }
 
         }
@@ -228,7 +242,6 @@ ul {
             flex: 0 1 700px;
             gap: 5px;
 
-            font-family: "roboto", sans-serif;
             color: white;
             
                 .head {
